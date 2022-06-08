@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const question = require('./models/question')
+const cors = require('cors')
 const app = express()
 const PORT = 3000
 require('dotenv').config()
@@ -14,6 +15,7 @@ mongoose.connect(dbConnectionString, {
 })
 
 app.set('view engine', 'ejs')
+app.use(cors())
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())

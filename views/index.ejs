@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be05affc2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CRUD API | WYR Qestions For ESL Teaching</h1>
+        <p>Use [BaseURL]<code>/api/questions</code> to fetch all questions</p>
+    </header>
+    <main>
+        <form action="/api" method="POST">
+            <input type="text" placeholder="Write your question here" name="question">
+            <button>Add</button>
+        </form>
+        <div class="questions__container">
+            <% for(let i = 0; i < info.length; i++) { %>
+                <div class="question">
+                    <p><%= info[i].question %></p>
+                    <span><%= info[i].vote %></span>
+                    <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-ban"></i>
+                </div>    
+                <% } %>
+        </div>
+    </main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

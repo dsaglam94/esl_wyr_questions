@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+code {
+  background-color: antiquewhite;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+input {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0, 0.2);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 1em 3em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+.questions__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 5rem;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.question p {
+  margin-right: auto;
+}
+
+.fa-chevron-up {
+  color: green;
+}
+
+.fa-ban {
+  color: red;
+}
